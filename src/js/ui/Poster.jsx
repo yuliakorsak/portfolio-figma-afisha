@@ -9,7 +9,7 @@ export default function Poster({ date, image, title, desc, options, ticketLink }
   });
 
   return (
-    <div className="poster">
+    <a className="poster" href="#">
       <div className="poster__date">
         <span className="poster__day">{dateParts[0]}</span>
         <span className="poster__month">{dateParts[1]}</span>
@@ -23,6 +23,6 @@ export default function Poster({ date, image, title, desc, options, ticketLink }
         </ul>
       </div>
       <a className="button" href={ticketLink}>Заказать билет</a>
-    </div>
+    </a>
   );
 }

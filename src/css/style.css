@@ -280,6 +280,7 @@ body {
 }
 
 .button {
+  width: max-content;
   color: #ffffff;
   font-weight: 600;
   background-color: #05b093;
@@ -414,19 +415,21 @@ body {
 
 .heading-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin-bottom: 100px;
 }
 
 .heading-section__right-wrapper {
   display: flex;
+  justify-content: space-between;
+  width: 259px;
+  margin: 0 0 0 auto;
 }
 
 .heading-section__icon {
   width: 40px;
   height: 40px;
-  margin-right: 32px;
   background-image: url("./img/ui.svg#icon-calendar");
 }
 
@@ -486,4 +489,64 @@ body {
 .announcement__inner-wrapper {
   display: flex;
   gap: 24px;
+}
+
+.event__main-image {
+  width: 526px;
+  height: 742px;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 636px;
+}
+
+.content__heading {
+  margin-bottom: 24px;
+}
+
+.content__image-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__image {
+  width: 306px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.paragraph {
+  margin-bottom: 16px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__row-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 966px;
+  margin: 0 auto;
+}
+
+.contact__column-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 416px;
+}
+
+.contact__map {
+  width: 856px;
+  height: 441px;
+  object-fit: cover;
+  margin: 100px auto 0;
 }

@@ -1,4 +1,4 @@
-export default function AnnouncementItem({ date, title }) {
+export default function AnnouncementItem({ date, title, link }) {
   const formatDate = new Date(date).toLocaleDateString('ru-RU', { month: 'long', day: 'numeric' });
   const dateParts = formatDate.split(' ');
 
@@ -8,7 +8,7 @@ export default function AnnouncementItem({ date, title }) {
         <span className="announcement__day">{dateParts[0]}</span>
         <span className="announcement__month">{dateParts[1]}</span>
       </div>
-      <div className="announcement__heading">{title}</div>
+      <a className="announcement__heading" href={link}>{title}</a>
     </div>
   );
 }
