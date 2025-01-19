@@ -89,11 +89,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 1296px;
+  flex-shrink: 0;
   margin: 0 auto;
 }
 
 .logo {
-  margin: 14px 3px 14px 2px;
+  margin: 14px 0;
 }
 
 .header__menu-list {
@@ -177,6 +178,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 100px;
   height: 98px;
   color: #ffffff;
@@ -195,7 +197,7 @@ body {
 
 .announcement__heading {
   width: 206px;
-  margin: auto 0 auto 15px;
+  margin: auto 0 auto 5px;
   font-size: 14px;
   font-weight: 600;
 }
@@ -222,10 +224,12 @@ body {
 
 .poster__day {
   font-size: 64px;
+  line-height: 1.125;
 }
 
 .poster__month {
   font-size: 32px;
+  line-height: 1;
 }
 
 .poster__image {
@@ -295,7 +299,7 @@ body {
 .news-item__image {
   width: 306px;
   height: 204px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   border-radius: 12px;
   background-color: rgba(25, 25, 25, 0.3);
 }
@@ -325,6 +329,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  border-radius: inherit;
   background-color: rgba(25, 25, 25, 0.3);
   content: "";
 }
@@ -411,20 +416,27 @@ body {
   height: 80px;
   margin-right: 24px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .heading-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 100px;
 }
 
+.heading-section_centered {
+  position: relative;
+  left: 12px;
+  justify-content: center;
+}
+
 .heading-section__right-wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 259px;
-  margin: 0 0 0 auto;
 }
 
 .heading-section__icon {
@@ -465,6 +477,8 @@ body {
 }
 
 .event-posters__inner-wrapper {
+  position: relative;
+  left: 12px;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -500,7 +514,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 22px;
   width: 636px;
 }
 
@@ -511,6 +525,12 @@ body {
 .content__image-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -10px;
+  font-size: 0;
+}
+
+.content .button {
+  margin: 17px 0;
 }
 
 .content__image {
@@ -540,7 +560,7 @@ body {
 .contact__column-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
   width: 416px;
 }
 
@@ -548,5 +568,6 @@ body {
   width: 856px;
   height: 441px;
   object-fit: cover;
-  margin: 100px auto 0;
+  margin: 84px auto 0;
+  border-radius: 12px;
 }

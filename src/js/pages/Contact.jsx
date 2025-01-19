@@ -12,10 +12,10 @@ export default function Contact() {
           </div>
           <div className="content__inner-wrapper">
             <h3 className="content__heading">Режим работы кассы Дворца:</h3>
-            <p className="content__paragraph">понедельник: выходной</p>
-            <p className="content__paragraph">вторник-суббота: с 11.00 до 19.00 час.</p>
-            <p className="content__paragraph">воскресенье: с 11.00 до 17.00 час.</p>
-            <p className="content__paragraph">перерыв: с 14.00 до 14.30 час.</p>
+            <p className="paragraph">понедельник: выходной</p>
+            <p className="paragraph">вторник-суббота: с 11.00 до 19.00 час.</p>
+            <p className="paragraph">воскресенье: с 11.00 до 17.00 час.</p>
+            <p className="paragraph">перерыв: с 14.00 до 14.30 час.</p>
           </div>
         </div>
         <div className="contact__column-wrapper">

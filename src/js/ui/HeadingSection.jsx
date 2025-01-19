@@ -14,7 +14,7 @@ export default function HeadingSection({ title, rightBar = null }) {
   }
   else {
     return (
-      <div className="heading-section">
+      <div className="heading-section heading-section_centered">
         <h1 className="heading-section__title">{title}</h1>
       </div>);
   }
