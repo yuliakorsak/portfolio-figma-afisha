@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Poster({ date, image, title, desc, options, ticketLink }) {
   const formatDate = new Date(date).toLocaleDateString('ru-RU', { month: 'long', day: 'numeric' });
   const dateParts = formatDate.split(' ');
@@ -9,7 +11,7 @@ export default function Poster({ date, image, title, desc, options, ticketLink }
   });
 
   return (
-    <a className="poster" href="#">
+    <Link className="poster" to="#">
       <div className="poster__date">
         <span className="poster__day">{dateParts[0]}</span>
         <span className="poster__month">{dateParts[1]}</span>
@@ -22,7 +24,7 @@ export default function Poster({ date, image, title, desc, options, ticketLink }
           {optionsList}
         </ul>
       </div>
-      <a className="button" href={ticketLink}>Заказать билет</a>
-    </a>
+      <Link className="button" to={ticketLink}>Заказать билет</Link>
+    </Link>
   );
 }

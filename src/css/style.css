@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Garamond";
   src: local("Garamond Bold"),
-    url("../fonts/CormorantGaramond-Bold.woff") format("woff");
+    url("../fonts/Garamond-Bold.woff") format("woff");
   font-weight: 700;
 }
 
@@ -517,6 +517,7 @@ body {
 .event__main-image {
   width: 526px;
   height: 742px;
+  border-radius: 12px;
   object-fit: cover;
   object-position: center;
 }

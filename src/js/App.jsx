@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './ui/Header.jsx';
 import Footer from './ui/Footer.jsx';
 import HomePage from './pages/HomePage.jsx';
@@ -8,7 +8,7 @@ import Contact from './pages/Contact.jsx'
 
 export default function App() {
   return (
-    <Router basename="/portfolio-figma-afisha">
+    <Router basename="/">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />

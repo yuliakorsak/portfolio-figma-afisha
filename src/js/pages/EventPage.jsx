@@ -16,8 +16,8 @@ export default function EventPage() {
     );
   });
   const secondaryImages = event.secondaryImg.map(img => (
-    <a className="content__image-link" href={"../" + img} target="_blank">
-      <img className="content__image" src={"../" + img} alt={event.title} />
+    <a className="content__image-link" href={img} target="_blank">
+      <img className="content__image" src={img} alt={event.title} />
     </a>
   ));
 
@@ -25,7 +25,7 @@ export default function EventPage() {
     <main className="event page">
       <HeadingSection title={event.title} />
       <div className="page__row-wrapper">
-        <img className="event__main-image" src={"../" + event.mainImg} alt={event.title} />
+        <img className="event__main-image" src={event.mainImg} alt={event.title} />
         <section className="content">
           {info}
           <div className="content__inner-wrapper">
