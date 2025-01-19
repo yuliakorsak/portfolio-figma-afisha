@@ -71,6 +71,7 @@ body {
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  background-color: #ededed;
 }
 
 .header {
@@ -157,10 +158,11 @@ body {
 }
 
 .footer__copyright {
-  width: 100%;
+  width: 1296px;
   height: 87px;
-  margin-top: 60px;
+  margin: 58px auto 0;
   line-height: 86px;
+  text-align: center;
   border-top: 1px solid #ffffff;
   opacity: 0.5;
 }
@@ -237,6 +239,8 @@ body {
   height: 240px;
   background-color: rgba(25, 25, 25, 0.3);
   border-radius: 12px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .poster__info-wrapper {
@@ -302,6 +306,8 @@ body {
   margin-bottom: 24px;
   border-radius: 12px;
   background-color: rgba(25, 25, 25, 0.3);
+  object-fit: cover;
+  object-position: center;
 }
 
 .news-item__heading {
@@ -321,6 +327,7 @@ body {
   text-align: left;
   border-radius: 12px 12px 0 0;
   background-size: cover;
+  background-position: center;
 }
 
 .calendar__heading::after {
@@ -330,7 +337,7 @@ body {
   left: 0;
   right: 0;
   border-radius: inherit;
-  background-color: rgba(25, 25, 25, 0.3);
+  background-color: rgba(25, 25, 25, 0.5);
   content: "";
 }
 
@@ -417,6 +424,7 @@ body {
   margin-right: 24px;
   border-radius: 8px;
   object-fit: cover;
+  object-position: center;
 }
 
 .heading-section {
@@ -463,6 +471,7 @@ body {
   width: 856px;
   height: 497px;
   object-fit: cover;
+  object-position: center;
   border-radius: 12px;
 }
 
@@ -509,6 +518,7 @@ body {
   width: 526px;
   height: 742px;
   object-fit: cover;
+  object-position: center;
 }
 
 .content {
@@ -537,6 +547,7 @@ body {
   width: 306px;
   height: 210px;
   object-fit: cover;
+  object-position: center;
   border-radius: 12px;
 }
 
@@ -568,6 +579,7 @@ body {
   width: 856px;
   height: 441px;
   object-fit: cover;
+  object-position: center;
   margin: 84px auto 0;
   border-radius: 12px;
 }
