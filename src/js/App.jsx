@@ -8,7 +8,7 @@ import Contact from './pages/Contact.jsx'
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/portfolio-figma-afisha">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
