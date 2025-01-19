@@ -109,7 +109,7 @@ body {
   height: 8px;
   margin-left: 20px;
   padding-left: 20px;
-  background: center / contain no-repeat url("./img/ui.svg#menu-marker");
+  background: center / contain no-repeat url("../img/ui.svg#menu-marker");
   content: "";
 }
 
@@ -276,15 +276,15 @@ body {
 }
 
 .poster__option_style::before {
-  background-image: url("./img/ui.svg#icon-music");
+  background-image: url("../img/ui.svg#icon-music");
 }
 
 .poster__option_time::before {
-  background-image: url("./img/ui.svg#icon-time");
+  background-image: url("../img/ui.svg#icon-time");
 }
 
 .poster__option_age::before {
-  background-image: url("./img/ui.svg#icon-person");
+  background-image: url("../img/ui.svg#icon-person");
 }
 
 .button {
@@ -401,11 +401,11 @@ body {
 }
 
 .button-nav_prev {
-  background-image: url("./img/ui.svg#arrow-left");
+  background-image: url("../img/ui.svg#arrow-left");
 }
 
 .button-nav_next {
-  background-image: url("./img/ui.svg#arrow-right");
+  background-image: url("../img/ui.svg#arrow-right");
 }
 
 .thumb-slider {
@@ -450,7 +450,7 @@ body {
 .heading-section__icon {
   width: 40px;
   height: 40px;
-  background-image: url("./img/ui.svg#icon-calendar");
+  background-image: url("../img/ui.svg#icon-calendar");
 }
 
 .heading-section__link {

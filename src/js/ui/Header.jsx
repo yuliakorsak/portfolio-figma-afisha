@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__inner-wrapper">
-        <Link to="/"><img className="logo" src="../img/logo.svg" alt="Сайт концертно-экскурсионных программ" /></Link>
+        <Link to="/"><img className="logo" src="img/logo.svg" alt="Сайт концертно-экскурсионных программ" /></Link>
         <nav className="header__main-menu">
           <ul className="header__menu-list">
             <li className="header__menu-item"><Link to="/events">Афиша</Link></li>

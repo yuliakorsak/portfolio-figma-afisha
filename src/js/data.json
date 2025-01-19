@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Антонио Вивальди. Времена года",
-      "mainImg": "../img/c499835e11691b8d4176b47885dfc6e6.jpg",
+      "mainImg": "img/c499835e11691b8d4176b47885dfc6e6.jpg",
       "info": [
         {
           "heading": "Санкт-Петербургский камерный оркестр Olympic Orchestra",
@@ -21,8 +21,8 @@
       "price": "700-1900 руб.",
       "ticketlink": "#",
       "secondaryImg": [
-        "../img/c499835e11691b8d4176b47885dfc6e6.jpg",
-        "../img/c499835e11691b8d4176b47885dfc6e6.jpg"
+        "img/c499835e11691b8d4176b47885dfc6e6.jpg",
+        "img/c499835e11691b8d4176b47885dfc6e6.jpg"
       ]
     }
   ],
@@ -30,7 +30,7 @@
   "modes": [
     {
       "title": "Обзорные экскурсии",
-      "image": "../img/cd73a34cf83ca6bbeb91f5a39f002d09.jpg",
+      "image": "img/cd73a34cf83ca6bbeb91f5a39f002d09.jpg",
       "events": {
         "2024-07-02": "#",
         "2024-07-05": "#",
@@ -49,7 +49,7 @@
     },
     {
       "title": "Концерты",
-      "image": "../img/03a43cdcea0377b70240ae14f0211a87.jpg",
+      "image": "img/03a43cdcea0377b70240ae14f0211a87.jpg",
       "events": {
         "2024-07-03": "#",
         "2024-07-06": "#",

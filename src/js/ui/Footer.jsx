@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner-wrapper">
-        <Link to="/"><img className="logo" src="../img/logo.svg" alt="Сайт концертно-экскурсионных программ" /></Link>
+        <Link to="/"><img className="logo" src="img/logo.svg" alt="Сайт концертно-экскурсионных программ" /></Link>
         <div className="footer__columns">
           <div className="footer__column">
             <h3 className="footer__column-heading">Мероприятия</h3>

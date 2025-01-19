@@ -33,7 +33,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <img className="contact__map" src="../img/map.png" alt="Карта: г. Санкт-Петербург, Невский пр., д. 1" />
+      <img className="contact__map" src="img/map.png" alt="Карта: г. Санкт-Петербург, Невский пр., д. 1" />
     </main>
   );
 }
