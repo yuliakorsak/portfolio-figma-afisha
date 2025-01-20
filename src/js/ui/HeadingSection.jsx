@@ -8,7 +8,7 @@ export default function HeadingSection({ title, rightBar = null }) {
         <h1 className="heading-section__title">{title}</h1>
         <div className="heading-section__right-wrapper">
           <div className="heading-section__icon"></div>
-          <Link className="heading-section__link" to="/events">{rightBar}</Link>
+          <Link className="heading-section__link" to="/events/all">{rightBar}</Link>
         </div>
       </div>
     );

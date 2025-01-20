@@ -75,6 +75,13 @@ body {
   background-color: #ededed;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -419,6 +426,10 @@ body {
   border-radius: 8px;
 }
 
+.thumb-slider_active {
+  background-color: rgba(25, 25, 25, 0.15);
+}
+
 .thumb-slider__image {
   width: 80px;
   height: 80px;
@@ -535,8 +546,9 @@ body {
 }
 
 .content__image-wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
   margin-bottom: -10px;
   font-size: 0;
 }

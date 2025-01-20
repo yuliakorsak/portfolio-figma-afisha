@@ -1,32 +1,33 @@
-import ThumbSlider from '../ui/ThumbSlider';
+import Slider from '../ui/Slider';
 import HeadingSection from '../ui/HeadingSection';
 import Poster from '../ui/Poster';
 import News from '../ui/News';
 import Calendar from '../ui/Calendar';
 import AnnouncementItem from '../ui/AnnouncementItem';
-import data from '../data.json';
+import PropTypes from 'prop-types';
 
-export default function HomePage() {
+export default function HomePage({data}) {
+  const events = data.events;
+
+  const posters = [];
+  events.slice(0, 2).forEach(event => {
+    posters.push(<Poster id={event.id} date={new Date(event.date)} image={event.mainImg}
+      title={event.title} desc={event.desc} options={event.options} key={event.id} />);
+  });
+
+  const announcements = [];
+  events.slice(0, 4).forEach(event => {
+    announcements.push(<AnnouncementItem id={event.id} date={new Date(event.date)} title={event.title} key={event.id} />);
+  });
 
   return (
     <main className="page">
-      <section className="slider">
-        <img className="slider__main-image" src="img/6775f20401b245a225846e0688dfe5f9.jpg" alt="Концертный зал" />
-        <div className="slider__previews-wrapper">
-          <ThumbSlider image={"img/c499835e11691b8d4176b47885dfc6e6.jpg"} title={"Опера VS Оперетта"} link={"#"} />
-          <ThumbSlider image={"img/03a43cdcea0377b70240ae14f0211a87.jpg"} title={"Антонио Вивальди. Времена года"} link={"/event/1"} />
-        </div>
-      </section>
+      <Slider events={events.slice(0, 3)} />
 
       <section className="event-posters">
         <HeadingSection title={"Афиша"} rightBar={"Все мероприятия"} />
         <div className="event-posters__inner-wrapper">
-          <Poster date={"2023-06-03"} image={"img/6775f20401b245a225846e0688dfe5f9.jpg"}
-            title={"«ВЕК имени СИНАТРЫ»"} desc={"Посвящение Фрэнку Синатре."}
-            options={{ style: "Джаз", time: "19:00", age: "6+" }} ticketLink={"#"} />
-          <Poster date={"2023-06-30"} image={"img/c499835e11691b8d4176b47885dfc6e6.jpg"}
-            title={"Опера VS Оперетта"} desc={"Санкт-Петербургский камерный оркестр Olympic Orchestra"}
-            options={{ style: "Классика" }} ticketLink={"#"} />
+          {posters}
         </div>
       </section>
 
@@ -48,12 +49,13 @@ export default function HomePage() {
       <section className="announcement">
         <HeadingSection title={"Краткие анонсы"} rightBar={"Все мероприятия"} />
         <div className="announcement__inner-wrapper">
-          <AnnouncementItem date={"2023-06-03"} title={"«ВЕК имени СИНАТРЫ»"} link={"#"} />
-          <AnnouncementItem date={"2023-06-12"} title={"Антонио Вивальди. Времена года"} link={"/event/1"} />
-          <AnnouncementItem date={"2023-06-30"} title={"Опера VS Оперетта"} link={"#"} />
-          <AnnouncementItem date={"2023-06-03"} title={"«ВЕК имени СИНАТРЫ»"} link={"#"} />
+          {announcements}
         </div>
       </section>
     </main>
   );
+}
+
+HomePage.propTypes = {
+  data: PropTypes.object.isRequired
 }

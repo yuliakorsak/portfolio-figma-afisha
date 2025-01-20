@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export default function Poster({ date, image, title, desc, options, ticketLink }) {
-  const formatDate = new Date(date).toLocaleDateString('ru-RU', { month: 'long', day: 'numeric' });
+export default function Poster({ id, date, image, title, desc, options }) {
+
+  const formatDate = date.toLocaleDateString('ru-RU', { month: 'long', day: 'numeric' });
   const dateParts = formatDate.split(' ');
 
+  if (!options) {
+    options = {};
+  }
+
+  options["time"] = date.toTimeString().substring(0, 5);
   const optionsList = [];
   Object.keys(options).forEach(key => {
     const className = 'poster__option poster__option_' + key;
@@ -19,22 +25,22 @@ export default function Poster({ date, image, title, desc, options, ticketLink }
       </div>
       <img className="poster__image" src={image} alt={title} />
       <div className="poster__info-wrapper">
-        <Link to="#"><h2 className="poster__title">{title}</h2></Link>
+        <Link to={"/event/" + id}><h2 className="poster__title">{title}</h2></Link>
         <p className="poster__description">{desc}</p>
         <ul className="poster__options">
           {optionsList}
         </ul>
       </div>
-      <Link className="button" to={ticketLink}>Заказать билет</Link>
+      <Link className="button" to="#">Заказать билет</Link>
     </div>
   );
 }
 
 Poster.propTypes = {
-  date: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   options: PropTypes.object,
-  ticketLink: PropTypes.string.isRequired
 }

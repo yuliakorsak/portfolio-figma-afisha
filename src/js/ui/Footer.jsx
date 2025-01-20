@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="footer__column">
             <h3 className="footer__column-heading">Мероприятия</h3>
             <ul className="footer__links-list">
-              <li className="footer__list-item"><Link to="/events">Экскурсии</Link></li>
-              <li className="footer__list-item"><Link to="/events">Концерты</Link></li>
-              <li className="footer__list-item"><Link to="/events">Афиша</Link></li>
+              <li className="footer__list-item"><Link to="/events/trips">Экскурсии</Link></li>
+              <li className="footer__list-item"><Link to="/events/concerts">Концерты</Link></li>
+              <li className="footer__list-item"><Link to="/events/all">Афиша</Link></li>
             </ul>
           </div>
           <div className="footer__column">
