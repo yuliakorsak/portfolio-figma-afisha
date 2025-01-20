@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function Calendar({ month, modes }) {
   const [mode, setMode] = useState(0);
@@ -59,4 +60,9 @@ export default function Calendar({ month, modes }) {
       </div>
     </div>
   )
+}
+
+Calendar.propTypes = {
+  month: PropTypes.string.isRequired,
+  modes: PropTypes.array
 }

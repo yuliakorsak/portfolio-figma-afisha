@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function News({ heading, desc, image }) {
   return (
     <div className="news-item">
@@ -8,4 +10,10 @@ export default function News({ heading, desc, image }) {
       </div>
     </div >
   );
+}
+
+News.propTypes = {
+  heading: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
 }

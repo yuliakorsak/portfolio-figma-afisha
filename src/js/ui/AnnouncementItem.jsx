@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function AnnouncementItem({ date, title, link }) {
   const formatDate = new Date(date).toLocaleDateString('ru-RU', { month: 'long', day: 'numeric' });
@@ -14,3 +15,9 @@ export default function AnnouncementItem({ date, title, link }) {
     </div>
   );
 }
+
+AnnouncementItem.propTypes = {
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+};

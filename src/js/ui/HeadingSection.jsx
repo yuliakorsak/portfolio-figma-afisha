@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function HeadingSection({ title, rightBar = null }) {
   if (rightBar !== null) {
@@ -18,4 +19,9 @@ export default function HeadingSection({ title, rightBar = null }) {
         <h1 className="heading-section__title">{title}</h1>
       </div>);
   }
+}
+
+HeadingSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  rightBar: PropTypes.string
 }
